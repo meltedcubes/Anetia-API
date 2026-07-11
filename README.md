@@ -31,7 +31,7 @@ public partial class Form1 : Form
         Anetia.InvokeApi();
     }
 
-    // Run script
+    // Run a script
     private void button1_Click(object sender, EventArgs e)
     {
         Anetia.Execute(richTextBox1.Text);
@@ -43,7 +43,7 @@ public partial class Form1 : Form
         Anetia.Inject();
     }
 
-    // Check attached
+    // Check if is attached
     private void button3_Click(object sender, EventArgs e)
     {
         MessageBox.Show(Anetia.IsAttached() ? "Attached!" : "Not attached");
